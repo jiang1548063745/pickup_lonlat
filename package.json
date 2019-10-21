@@ -11,9 +11,11 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "echarts": "^4.3.0",
     "element-ui": "^2.11.1",
     "js-cookie": "^2.2.1",
     "ol": "^5.3.3",
+    "ol-echarts": "^2.0.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },

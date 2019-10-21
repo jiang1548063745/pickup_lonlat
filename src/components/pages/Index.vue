@@ -48,7 +48,7 @@ export default {
         moveEvtKey: null,
         clickEvtKey: null,
         overlay: null,
-        baseLayer: CustomLayers.BlueStreeLayer,
+        baseLayer: CustomLayers.CommLayer,
         borderLayer: null,
         zoom: 13,
         mapCenter: null,
@@ -82,7 +82,7 @@ export default {
       this.map.mapObj = new Map({
         target: 'mapContainer',
         layers: [
-          CustomLayers.BlueStreeLayer
+          CustomLayers.CommLayer
         ],
         view: new View({
           center: _this.map.mapCenter,
@@ -125,7 +125,7 @@ export default {
     this.initMap()
     this.addBorder()
     this.addOverlay()
-    // this.addMapEvt()
+    this.addMapEvt()
   }
 }
 </script>
